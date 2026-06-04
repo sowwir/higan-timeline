@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIGAN - ARCHIVE TERMINAL v1.2.4</title>
+    <title>TERMINAL - TIMELINE</title>
     <style>
         :root {
             --bg-color: #010103;
@@ -238,8 +238,8 @@
 
     <!-- boot -->
     <div class="intro-overlay" id="introOverlay">
-        <div class="boot-text" id="bootText">HG_TERMINAL // ESTABELECENDO CONEXÃO QUÂNTICA</div>
-        <button class="enter-btn" id="enterBtn">RECONSTRUIR REALIDADE</button>
+        <div class="boot-text" id="bootText">TERMINAL // ESTABELECENDO CONEXÃO</div>
+        <button class="enter-btn" id="enterBtn">VISUALIZAR LINHA TEMPORAL</button>
     </div>
 
     <!-- timeline  -->
@@ -372,42 +372,42 @@
             { 
                 id: 0, timestamp: "50 B.F.", title: "Reality Fissures", eraClass: "harmony-node", glitch: false, hexColor: "#00f3ff",
                 statusClass: "status-warning", statusText: "RUPTURA EM FENDA // REGIAO: JAPAO", hasFactions: false,
-                image: "https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?q=80&w=600&auto=format&fit=crop",
+                image: "./assets/images/kitsune.png",
                 text: "Aproximadamente o ano de 2025 na antiga contagem. Cidades do Japão começaram a apresentar graves rupturas na fenda da realidade. Trata-se das primeiras aparições da distorção aos seres humanos, acompanhadas de múltiplos relatos de uma representação menor da Kitsune.",
                 threats: ["• CODE: FIERY-KITSUNE // Classificação: Entidade Menor? Falta de informação.", "• ECO_DAMAGE: Localizado (Fissuras Nível 1)"], code: "LOG // #KTS-2025"
             },
             { 
                 id: 1, timestamp: "30 B.F.", title: "The Rise of Factions", eraClass: "harmony-node", glitch: false, hexColor: "#00f3ff",
                 statusClass: "status-secure", statusText: "REGISTRO DE INFORMAÇÃO ORG", hasFactions: true,
-                image: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=600&auto=format&fit=crop",
+                image: "./assets/images/orgs.png",
                 text: "Diversas organizações e blocos de power mundial apareceram para estudar a natureza da distorção, cindindo a humanidade em ideologias drásticas. Quatro facções principais consolidaram suas posições de controle através do globo.",
                 threats: ["• CODE: SYSTEM-READOUT // Nenhuma ameaça biológica nativa.", "• ALERTA: Tensões geopolíticas e espionagem industrial em laboratórios ocultos."], code: "LOG // #FAC-RECORDS"
             },
             { 
                 id: 2, timestamp: "1 B.F.", title: "The Green Light", eraClass: "harmony-node", glitch: false, hexColor: "#00f3ff",
                 statusClass: "status-comet", statusText: "CORPO CELESTE LOCALIZADO", hasFactions: true,
-                image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop",
+                image: "./assets/images/comet.png",
                 text: "Um cometa verde brilhante passa a ser avistado permanentemente cruzando o céu diurno e noturno. Centenas de teorias apocalípticas e científicas foram construídas pelas organizações, nenhuma capaz de prever o impacto real.",
                 threats: ["• ANOMALIA: Radiação Gama Estelar não catalogada."], code: "LOG // #CMT-01"
             },
             { 
                 id: 3, timestamp: "0 X", title: "THE FRACTURE", eraClass: "fracture-node", glitch: true, hexColor: "#ff4d4d",
                 statusClass: "status-danger", statusText: "COLISAO GLOBAL // SISTEMA CORROMPIDO", hasFactions: true,
-                image: "https://images.unsplash.com/photo-1604871000636-074fa5117945?q=80&w=600&auto=format&fit=crop",
+                image: "./assets/images/nodata.png",
                 text: "O evento catastrófico definitivo. O cometa colidiu frontalmente com a Terra, rasgando em definitivo a fenda da realidade que nos separava da distorção. O caos espalhou-se pela existência: tecnologia, geografia e a biologia foram inteiramente corrompidas.",
                 threats: ["• DETECTADO: Colapso da malha de realidade.", "• PROTOCOLO: Evacuação global inutilizada."], code: "CRIT_ERR // #BREAK-REALITY"
             },
             { 
                 id: 4, timestamp: "2 A.F.", title: "The Embryo Meteor", eraClass: "fractured-node", glitch: true, hexColor: "#9d4cff",
                 statusClass: "status-danger", statusText: "EXTINCAO EM MASSA // ANOMALIA BIOLOGICA", hasFactions: true,
-                image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=600&auto=format&fit=crop",
+                image: "./assets/images/nodata.png",
                 text: "A humanidade encontra-se reduzida a ruínas e destroços. Pouquíssimos sobreviventes restaram devido à letal exposição à distorção pura e ataques de aberrações. O meteoro segue cravado na Terra, e cientistas sobreviventes teorizam fortes similaridades estruturais com um ovo cósmico.",
                 threats: ["• NOTA: Meteoro emitindo sons baixos de respiração."], code: "LOG // #EGG-SPECIMEN"
             },
             { 
                 id: 5, timestamp: "10 A.F.", title: "New Era", eraClass: "fractured-node", glitch: false, hexColor: "#9d4cff",
                 statusClass: "status-secure", statusText: "ANO ATUAL // COEXISTENCIA MUTUA", hasFactions: true,
-                image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop",
+                image: "./assets/images/nodata.png",
                 text: "Período contemporâneo. Apenas seres humanos cujos corpos provaram ser geneticamente capazes de coexistir e canalizar a distorção restaram vivos. As antigas metrópoles mortas estão sendo reerguidas e rebatizadas com novos nomes para a nova era.",
                 threats: ["• ALERTA: Seres humanos devem ficar longe de áreas mortas."], code: "LIVE_STREAM // #CURRENT-10"
             }
@@ -614,7 +614,7 @@
 
         enterBtn.addEventListener('click', () => {
             initAudio(); 
-            bootText.innerText = "SISTEMA COMPILADO // EXECUTANDO GRAVAÇÕES DE COGNIÇÃO...";
+            bootText.innerText = "SISTEMA ONLINE // EXECUTANDO GRAVAÇÕES...";
             enterBtn.style.display = 'none';
 
             if(bgMusic) {
